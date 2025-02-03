@@ -4,7 +4,7 @@
 
     <!-- PANNELLO AGGIORNA STATI -->
     <div class="col-12">
-      <div class="card bg-warning">
+      <div class="card bg_azure">
         <!-- <div class="card-header">
           <h5 class="card-title">{{ totaleElementi() }} Dispositivi collegati</h5>
         </div> -->

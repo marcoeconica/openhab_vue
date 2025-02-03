@@ -3,6 +3,24 @@
   --primary-wheat: #FFEEDB;
   --primary-blue: #25CED1;
   --secondary-blue: #053F5C;
+  --primary-azure: #97CEC9;
+  --dark-orange: #D56B31;
+}
+
+.color_dark_orange{
+  color: var(--dark-orange) !important;
+}
+
+.bg_dark_orange{
+  background-color: var(--dark-orange) !important;
+}
+
+.color_azure{
+  color: var(--primary-azure) !important;
+}
+
+.bg_azure{
+  background-color: var(--primary-azure) !important;
 }
 
 .bg_blue{

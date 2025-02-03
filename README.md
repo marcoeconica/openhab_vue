@@ -23,7 +23,7 @@
 
 
 # prossimi passi
-- test deploy
+- [v] test deploy
 - geolocalizzazione
 - notifiche push
 - colori / logo / img

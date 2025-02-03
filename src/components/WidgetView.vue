@@ -1,10 +1,10 @@
 <template>
 <!-- FILTRI -->
-<div class="btn-group filtri bg_secondary_blue">
-  <h6 class="custom-color px-2" v-if="currentCategory == ' '">Scegli una categoria</h6>
-  <button @click="filterItems('finestra')" class="btn btn-secondary"><span v-if="currentCategory == 'finestra'" class="color_blue fw-bold">Finestre</span> <span class="custom-color" v-else>Finestre</span></button>
-  <button @click="filterItems('serranda')" class="btn btn-secondary"><span v-if="currentCategory == 'serranda'" class="color_blue fw-bold">Serrande</span> <span class="custom-color" v-else>Serrande</span></button>
-  <button @click="filterItems('porta')" class="btn btn-secondary"><span v-if="currentCategory == 'porta'" class="color_blue fw-bold">Porte</span> <span class="custom-color" v-else>Porte</span></button>
+<div class="btn-group filtri bg_azure">
+  <h6 class="color_secondary_blue px-2" v-if="currentCategory == ' '">Scegli una categoria</h6>
+  <button @click="filterItems('finestra')" class="btn bg_dark_orange fw-bold"><span v-if="currentCategory == 'finestra'" class="color_secondary_blue fw-bold">Finestre</span> <span class="custom-color" v-else>Finestre</span></button>
+  <button @click="filterItems('serranda')" class="btn bg_dark_orange fw-bold"><span v-if="currentCategory == 'serranda'" class="color_secondary_blue fw-bold">Serrande</span> <span class="custom-color" v-else>Serrande</span></button>
+  <button @click="filterItems('porta')" class="btn bg_dark_orange fw-bold"><span v-if="currentCategory == 'porta'" class="color_secondary_blue fw-bold">Porte</span> <span class="custom-color" v-else>Porte</span></button>
   <!-- <button @click="filterItems('lampada')" class="btn btn-secondary">Lampade</button> ESEMPIO -->
 </div>
 <!-- RICORDA CHE LA LABEL DEGLI ITEMS DEVE AVERE ALMENO UNO SPAZIO PER ESSERE LETTO -->
