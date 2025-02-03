@@ -122,7 +122,7 @@ methods: {
       // Funzione che effettua la chiamata API a openHAB Cloud
       async fetchItems() {
         try {
-          const response = await fetch("http://149.62.186.157:3000/rest/items", {
+          const response = await fetch("https://abcdomotics.econica.it/rest/items", {
             headers: {
               "Authorization": "Basic " + btoa(`${authStore.username}:${authStore.password}`),
               "Bearer-Token": authStore.token 

@@ -360,7 +360,7 @@ export const store = reactive({
       // FUNZIONE PER I BOTTONI SU, GIU, STOP DELLA SERRANDA
       async sendCommand(itemName, command) {
         try {
-          const response = await fetch(`http://149.62.186.157:3000/rest/items/${encodeURIComponent(itemName)}`, {
+          const response = await fetch(`https://abcdomotics.econica.it/rest/items/${encodeURIComponent(itemName)}`, {
             method: 'POST', // oppure 'PUT' se le tue API lo richiedono
             headers: {
               "Content-Type": "text/plain",  // o "text/plain; charset=utf-8"
@@ -391,7 +391,7 @@ export const store = reactive({
         }
 
       try {
-        const response = await fetch(`http://149.62.186.157:3000/rest/items/${encodeURIComponent(itemName)}`, {
+        const response = await fetch(`https://abcdomotics.econica.it/rest/items/${encodeURIComponent(itemName)}`, {
           method: 'POST',
           headers: {
             "Content-Type": "text/plain",
