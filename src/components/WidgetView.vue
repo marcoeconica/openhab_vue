@@ -199,11 +199,8 @@
         
         const results = await Promise.all(
           this.filteredItems.map(async (itemName) => {
-
-            const fixedLink = itemName.link.replace(/^http:\/\//, 'https://');
-
-            const response = await fetch(fixedLink, {
-              method: 'POST',  
+            const response = await fetch(`${itemName.link}`, {
+              method: 'POST',
               headers: {
                 "Content-Type": "text/plain",
                 "Authorization": "Basic " + btoa(`${authStore.username}:${authStore.password}`),
