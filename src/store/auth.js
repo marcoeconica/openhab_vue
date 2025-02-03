@@ -12,7 +12,7 @@ export const authStore = reactive({
   async login(username, password) {
     try {
       // Test su openHAB Cloud, facendo una chiamata "autenticata" a /rest/items
-      const response = await fetch('http://149.62.186.157:3000/rest/items', {
+      const response = await fetch('https://abcdomotics.econica.it/rest/items', {
         method: 'GET',
         headers: {
           'Authorization': 'Basic ' + btoa(`${username}:${password}`),
@@ -21,8 +21,8 @@ export const authStore = reactive({
       });
 
       if (!response.ok) {
-        throw new Error(`Login failed: ${response.status} ${response.statusText}`);
         console.log("non ok");
+        throw new Error(`Login failed: ${response.status} ${response.statusText}`);
       }
       
       // Se la risposta è 200, significa che username e password sono validi
