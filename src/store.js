@@ -125,7 +125,7 @@ export const store = reactive({
     },
     {
       name: 'Sala Giochi',
-      img: '/img/sala_giochi.webp',
+      img: '/img/tavernetta.webp',
       items: []
     },
     {
@@ -168,6 +168,7 @@ export const store = reactive({
       img: '/img/garage.webp',
       items: []
     },
+    //******************************************** */
     {
       name: 'Mansarda',
       img: '/img/mansarda.webp',
@@ -194,8 +195,8 @@ export const store = reactive({
       items: []
     },
     {
-      name: 'Sala Biliardo',
-      img: '/img/sala_biliardo.webp',
+      name: 'Tavernetta',
+      img: '/img/tavernetta.webp',
       items: []
     },
     {
