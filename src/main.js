@@ -2,6 +2,10 @@ import { createApp } from 'vue'
 
 import App from './App.vue'
 
+
+import router from './router.js'
+import { authStore } from './store/auth.js'
+
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -19,5 +23,7 @@ library.add(fas, far, fab)
 const app = createApp(App)
 
 app.component('font-awesome-icon', FontAwesomeIcon)
-
+app.use(router)
+app.use(authStore)
+authStore.loadFromLocalStorage();
 app.mount('#app')

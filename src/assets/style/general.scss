@@ -1,4 +1,9 @@
-/* @use './partials/exmaple.scss'; */
+@use './partials/colors.scss';
+@use './partials/reset.scss';
+@use './partials/buttons.scss';
+@use './partials/cards.scss';
+
+
 
 #app {
   height: 100vh;
@@ -11,3 +16,5 @@
 main {
   flex-grow: 1;
 }
+
+

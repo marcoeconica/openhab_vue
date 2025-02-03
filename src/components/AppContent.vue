@@ -1,7 +1,15 @@
 <script>
+import LoginView from './LoginView.vue'
+import HomeView from './HomeView.vue'
+import AreaDetails from './AreaDetails.vue'
+import AreaView from './AreaView.vue'
 
 export default {
   components: {
+    LoginView,
+    HomeView,
+    AreaDetails,
+    AreaView
   },
   data() {
     return {
@@ -15,10 +23,10 @@ export default {
 
   <main>
     <section class="h-100">
-      <div class="container py-5 h-100">
-        <div class="row aling-items-center flex-column justify-content-center h-100">
+      <div class="container">
+        <div class="row flex-column justify-content-center h-100">
           <div class="col-auto text-center">
-            <h1>Hello Vue <font-awesome-icon :icon="['fab', 'vuejs']" /></h1>
+            <router-view></router-view>
           </div>
         </div>
       </div>
@@ -27,4 +35,9 @@ export default {
 
 </template>
 
-<style></style>
+<style>
+main {
+  background-color: var(--primary-wheat);
+  padding-bottom: 60px;
+}
+</style>

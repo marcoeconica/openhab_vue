@@ -1,0 +1,41 @@
+:root{
+  --primary-orange: #F8C537;
+  --primary-wheat: #FFEEDB;
+  --primary-blue: #25CED1;
+  --secondary-blue: #053F5C;
+}
+
+.bg_blue{
+  background-color: var(--primary-blue) !important;
+}
+
+.color_blue{
+  color: var(--primary-blue) !important;
+}
+
+.color_secondary_blue{
+  color: var(--secondary-blue) !important;
+}
+
+.bg_secondary_blue{
+  background-color: var(--secondary-blue) !important;
+}
+
+.bg_wheat{
+  background-color: var(--primary-wheat) !important;
+}
+
+.custom-color{
+    color: var(--primary-orange) !important;
+  }
+
+.bg_custom{
+    background-color: var(--primary-orange) !important;
+  }
+
+
+
+
+
+
+

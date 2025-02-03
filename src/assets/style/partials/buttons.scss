@@ -1,0 +1,51 @@
+
+
+// COMANDO SERRANDA
+
+.comando_serranda{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid var(--secondary-blue);
+    border-radius: 999px;
+    width: 40px;
+    height: 80px;
+    padding: 2px;
+    background-color: var(--primary-wheat);
+    font-size: 16px;
+    gap: 1px;
+    }
+    
+  
+// TASTI SERRANDA
+.tasto_up{
+    
+      width: 100%;
+      height: 100%;
+      border: 1px solid var(--secondary-blue);
+      border-top-left-radius: 999px;
+      border-top-right-radius: 999px;
+      background-color: var(--primary-orange);
+      color: var(--secondary-blue);
+}
+    
+.stop{
+      width: 100%;
+      height: 100%;
+      border: 1px solid var(--secondary-blue);
+      background-color: var(--primary-orange);
+      color: var(--secondary-blue);
+}
+    
+.tasto_down{
+      width: 100%;
+      height: 100%;
+      border: 1px solid var(--secondary-blue);
+      border-bottom-left-radius: 999px;
+      border-bottom-right-radius: 999px;
+      background-color: var(--primary-orange);
+      color: var(--secondary-blue);
+}
+  
+  
