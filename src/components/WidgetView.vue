@@ -188,42 +188,42 @@
         });
       },
       //funzione per inviare il comando a tutte le serrande
-      async setAllRollerShuttersPosition(position) {
-      // Per sicurezza, controllo che `position` sia 0, 50 o 100
-      if (![0, 50, 100].includes(position)) {
-        console.error(`Posizione non valida: ${position}`);
-        return;
-      }
+      // async setAllRollerShuttersPosition(position) {
+      // // Per sicurezza, controllo che `position` sia 0, 50 o 100
+      // if (![0, 50, 100].includes(position)) {
+      //   console.error(`Posizione non valida: ${position}`);
+      //   return;
+      // }
 
-      try {
+      // try {
         
-        const results = await Promise.all(
-          this.filteredItems.map(async (itemName) => {
-            const response = await fetch(`${itemName.link}`, {
-              method: 'POST',  
-              headers: {
-                "Content-Type": "text/plain",
-                "Authorization": "Basic " + btoa(`${authStore.username}:${authStore.password}`),
-                "Bearer-Token": authStore.token
-              },
-              body: position.toString()
+      //   const results = await Promise.all(
+      //     this.filteredItems.map(async (itemName) => {
+      //       const response = await fetch(`${itemName.link}`, {
+      //         method: 'POST',  
+      //         headers: {
+      //           "Content-Type": "text/plain",
+      //           "Authorization": "Basic " + btoa(`${authStore.username}:${authStore.password}`),
+      //           "Bearer-Token": authStore.token
+      //         },
+      //         body: position.toString()
               
-            });
+      //       });
 
-            if (!response.ok) {
-              throw new Error(`Errore per item "${itemName}": ${response.status} ${response.statusText}`);
-            }
+      //       if (!response.ok) {
+      //         throw new Error(`Errore per item "${itemName}": ${response.status} ${response.statusText}`);
+      //       }
 
-            return itemName; // Se tutto ok, restituisco il nome dell'item
-          })
-        );
+      //       return itemName; // Se tutto ok, restituisco il nome dell'item
+      //     })
+      //   );
 
-        // Se tutte le promesse sono andate a buon fine, results conterrà i nomi delle serrande impostate
-        // console.log(`Posizione ${position}% inviata correttamente a: ${results.join(", ")}`);
-      } catch (err) {
-          console.error("Errore durante l'invio del comando a tutte le serrande:", err.message);
-        }
-      },
+      //   // Se tutte le promesse sono andate a buon fine, results conterrà i nomi delle serrande impostate
+      //   // console.log(`Posizione ${position}% inviata correttamente a: ${results.join(", ")}`);
+      // } catch (err) {
+      //     console.error("Errore durante l'invio del comando a tutte le serrande:", err.message);
+      //   }
+      // },
       filterItems(category) {
         this.currentCategory = category;
         this.filteredItems = [];
