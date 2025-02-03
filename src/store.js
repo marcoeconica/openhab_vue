@@ -168,7 +168,6 @@ export const store = reactive({
       img: '/img/garage.webp',
       items: []
     },
-    //******************************************** */
     {
       name: 'Mansarda',
       img: '/img/mansarda.webp',
@@ -221,12 +220,12 @@ export const store = reactive({
     },
     {
       name: 'Corridoio C',
-      img: '/img/corridoio_c.webp',
+      img: '/img/corridoio_a.webp',
       items: []
     },
     {
       name: 'Corridoio D',
-      img: '/img/corridoio_d.webp',
+      img: '/img/corridoio_b.webp',
       items: []
     }
     ],

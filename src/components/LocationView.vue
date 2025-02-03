@@ -58,10 +58,10 @@
   
             // Qui controlli se sei in casa
             // Sostituisci con la lat e lon della tua abitazione
-            //45°18'09.3"N 7°53'32.0"E
+            // dati latitudine e longitudine vanno poi salvati in un db associati all'utente (ogni utente avrà una sua "abitazione")
             const homeLat = 45.5071
             const homeLon = 8.6618
-            const distanceThreshold = 150 // metri di tolleranza
+            const distanceThreshold = 500 // metri di tolleranza
   
             const distance = this.computeDistance(
               this.latitude,
