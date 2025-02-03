@@ -6,6 +6,9 @@ import AreaDetails from './components/AreaDetails.vue';
 import { authStore } from './store/auth.js';
 import AreaView from './components/AreaView.vue';
 import WidgetView from './components/WidgetView.vue';
+import LocationView from './components/LocationView.vue';
+
+
 const routes = [
   {
     path: '/login',
@@ -44,6 +47,12 @@ const routes = [
     path: '/area/:areaName',
     name: 'areaDetails',
     component: AreaDetails,
+    meta: { requiresAuth: true }
+  },
+  {
+    path: '/location',
+    name: 'location',
+    component: LocationView,
     meta: { requiresAuth: true }
   }
 ];

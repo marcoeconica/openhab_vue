@@ -34,7 +34,7 @@ export default {
               </router-link>
             </div>
             <div class="col-3 d-flex justify-content-center align-items-center">
-              <router-link to="/" :class="{ 'active': $route.path === '/' }">
+              <router-link to="/location" :class="{ 'active': $route.path === '/location' }">
                 <font-awesome-icon :icon="['fas', 'people-roof']" />
               </router-link>
             </div>
